@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte do Parque Tematico</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .box {
+            background: #ffffff;
+            border: 1px solid #d8dee9;
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Suporte do Parque Tematico</h1>
+        <p>Use o assistente virtual para registrar problemas em atracoes, consultar protocolos e obter informacoes do parque.</p>
+        <div class="box">
+            <p>O chatbot fica disponivel no canto inferior direito da pagina.</p>
+        </div>
+    </main>
+
+    <!-- Troque o valor de agent-id pelo ID informado na integracao Dialogflow Messenger. -->
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Suporte Parque"
+        agent-id="COLE_AQUI_O_AGENT_ID"
+        language-code="pt-br">
+    </df-messenger>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</body>
+</html>
