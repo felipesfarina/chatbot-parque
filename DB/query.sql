@@ -1,5 +1,4 @@
-CREATE DATABASE IF NOT EXISTS parque_chatbot;
-USE parque_chatbot;
+USE PFS2_10442510930;
 
 CREATE TABLE atracao (
     codigo INT AUTO_INCREMENT PRIMARY KEY,

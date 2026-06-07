@@ -36,7 +36,10 @@ function obterParametro(dados, nome){
 
 function normalizarTexto(valor){
     if (Array.isArray(valor)){
-        return valor[0] || "";
+        return normalizarTexto(valor[0]);
+    }
+    if (valor && typeof valor == "object"){
+        return valor.name || valor.nome || valor.original || "";
     }
     return valor || "";
 }
